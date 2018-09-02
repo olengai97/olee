@@ -1,0 +1,92 @@
+* {
+	box-sizing: border-box;
+	color: #723;
+}
+
+body, html {
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding:5px 10px 0px;
+	background: #723;
+	z-index: 999;
+	height: 40px;
+	position: relative;
+}
+
+header #h1{
+	margin: 0;
+	padding-bottom: 0;
+	display: inline-block;
+	font-size: 35px;
+	color: #fff;
+}
+
+#btn {
+	display: flex;
+	width: 30px;
+	height: 30px;
+	padding-top: 5px;
+	justify-content: space-between;
+	align-items: stretch;
+	flex-direction: column;
+}
+
+#btn div {
+	width: 25px;
+	height: 4px;
+	background: #fff;
+	display:block;
+	border-radius: 3px;
+	margin-bottom: 4px;
+}
+nav{
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	background: orange;
+	z-index: 555;
+	animation: shuka 0.2s;
+	position: absolute;
+	top: 40px;
+}
+
+@keyframes shuka {
+	from { top: -500px; }
+	to { top: 40px; }
+}
+
+nav input {
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 10px;
+	border: 1px solid #723;
+	padding: 8px 16px;
+	border-radius: 3px;
+	background: #Aff;
+}
+
+nav a {
+	display: inline-block;
+	text-decoration: none;
+	padding:7px 5px 5px 15px;
+	transition: border 0.2s;
+}
+
+nav a:hover {
+	border-left: 8px solid #723;
+}
+
+.off {
+	display: none;
+}
+
+.on {
+	display: flex;
+}
+
